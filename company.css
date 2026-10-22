@@ -1,0 +1,20 @@
+.brand-mark::before { content: "A"; }
+.hero h1 { max-width: 850px; font-size: clamp(3.1rem, 6.6vw, 6rem); line-height: 1.04; }
+.hero-content { padding-top: 110px; padding-bottom: 130px; }
+.hero-note { max-width: calc(100% - 40px); }
+.manifesto::before { content: "A"; }
+.company-section { background: #0a1c29; }
+.company-grid { display: grid; grid-template-columns: 1fr 1fr; margin: 0; border-top: 1px solid var(--line); }
+.company-grid > div { padding: 28px 28px 28px 0; border-bottom: 1px solid var(--line); }
+.company-grid dt { color: var(--muted); font-size: .88rem; margin-bottom: 10px; }
+.company-grid dd { margin: 0; font-size: 1.14rem; font-weight: 600; overflow-wrap: anywhere; }
+address { font-style: normal; }
+.contact-inner > div { flex: 1; }
+.contact-inner address { color: var(--blue-bright); flex: 0 1 330px; }
+.contact-inner h2 { font-size: clamp(2rem, 3.6vw, 3.5rem); line-height: 1.1; margin-top: 20px; }
+.legal-toc { max-height: calc(100vh - 135px); overflow-y: auto; }
+.legal-content h2, main section[id] { scroll-margin-top: 105px; }
+:focus-visible { outline: 3px solid #339ed1; outline-offset: 5px; }
+@media (max-width: 900px) { .legal-toc { max-height: none; overflow: visible; } }
+@media (max-width: 620px) { .company-grid { grid-template-columns: 1fr; } .contact-inner address { flex-basis: auto; } .hero h1 { font-size: clamp(2.65rem, 12vw, 4rem); } .hero-note { font-size: .75rem; } }
+@media print { .site-header, .legal-toc, .site-footer { display: none; } .legal-shell { padding: 0; } .legal-layout { display: block; padding: 20px 0; } .legal-hero { padding: 20px 0; } }
